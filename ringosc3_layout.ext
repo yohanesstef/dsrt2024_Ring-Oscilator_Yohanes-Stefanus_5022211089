@@ -1,0 +1,115 @@
+timestamp 1715176843
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use inverter1 inverter1_0 1 0 200 0 1 90
+use inverter1 inverter1_1 1 0 560 0 1 90
+use inverter1 inverter1_2 1 0 920 0 1 90
+use inverter1 inverter1_3 1 0 1280 0 1 90
+use inverter1 inverter1_4 1 0 1640 0 1 90
+node "VN" 4 512.497 40 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 105400 3660 0 0 0 0 0 0 0 0 0 0
+node "VP" 4 427.389 40 550 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 105600 3640 0 0 0 0 0 0 0 0 0 0
+node "li_40_10#" 563 615.049 40 10 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70400 3600 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1430_270#" 51 29.1649 1430 270 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 400 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1070_270#" 51 29.9894 1070 270 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 400 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_710_270#" 51 29.9894 710 270 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 400 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_350_270#" 51 32.5287 350 270 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 400 0 0 0 0 0 0 0 0 0 0 0 0
+node "OUT" 72 264.238 90 250 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 440 106000 3640 0 0 0 0 0 0 0 0 0 0
+node "li_40_560#" 563 526.586 40 560 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70400 3600 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_0_330#" 9000 1026 0 330 nw 0 0 0 0 342000 3980 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_710_270#" "li_40_10#" 16.4516
+cap "w_0_330#" "li_350_270#" 12.1585
+cap "li_40_560#" "li_710_270#" 14.6763
+cap "OUT" "VN" 305.705
+cap "li_40_560#" "li_40_10#" 47.8717
+cap "VN" "li_1430_270#" 0.25134
+cap "w_0_330#" "li_1070_270#" 12.1585
+cap "VP" "VN" 2.44444
+cap "li_710_270#" "VN" 0.287245
+cap "li_40_560#" "VN" 0.371889
+cap "VN" "li_40_10#" 244.948
+cap "w_0_330#" "OUT" 106.033
+cap "w_0_330#" "li_1430_270#" 12.1585
+cap "w_0_330#" "VP" 99.7143
+cap "li_350_270#" "OUT" 34.8973
+cap "li_710_270#" "w_0_330#" 12.1585
+cap "li_1070_270#" "OUT" 32.5239
+cap "w_0_330#" "li_40_10#" 32.1705
+cap "li_40_560#" "w_0_330#" 127.237
+cap "li_350_270#" "VP" 0.228673
+cap "li_710_270#" "li_350_270#" 4.47368
+cap "li_1070_270#" "li_1430_270#" 4.47368
+cap "li_1070_270#" "VP" 0.228673
+cap "li_40_560#" "li_350_270#" 14.6763
+cap "li_350_270#" "li_40_10#" 16.4516
+cap "li_710_270#" "li_1070_270#" 4.47368
+cap "w_0_330#" "VN" 1.01559
+cap "li_40_560#" "li_1070_270#" 14.6763
+cap "li_1070_270#" "li_40_10#" 16.4516
+cap "li_350_270#" "VN" 0.287245
+cap "OUT" "li_1430_270#" 37.9492
+cap "OUT" "VP" 271.965
+cap "li_1070_270#" "VN" 0.287245
+cap "li_710_270#" "OUT" 32.5239
+cap "VP" "li_1430_270#" 0.228673
+cap "li_40_560#" "OUT" 18.3606
+cap "OUT" "li_40_10#" 22.1855
+cap "li_710_270#" "VP" 0.228673
+cap "li_40_560#" "li_1430_270#" 14.6763
+cap "li_40_10#" "li_1430_270#" 16.4516
+cap "li_40_560#" "VP" 245.2
+cap "VP" "li_40_10#" 0.371889
+cap "inverter1_4/Y" "inverter1_2/A" 56.9098
+cap "inverter1_1/A" "inverter1_4/VN" 5.13496
+cap "inverter1_2/A" "inverter1_4/VP" 16.1275
+cap "inverter1_4/Y" "inverter1_1/A" 70.4031
+cap "inverter1_4/A" "inverter1_4/VN" 5.97224
+cap "inverter1_3/A" "inverter1_4/A" 16.4115
+cap "inverter1_3/A" "inverter1_4/VN" 4.83813
+cap "inverter1_1/A" "inverter1_4/VP" 15.3308
+cap "inverter1_4/A" "inverter1_4/Y" 42.9739
+cap "inverter1_4/Y" "inverter1_4/VN" 31.1645
+cap "inverter1_3/A" "inverter1_4/Y" 56.7962
+cap "inverter1_1/A" "inverter1_2/A" 21.1807
+cap "inverter1_4/A" "inverter1_4/VP" 12.3835
+cap "inverter1_4/VP" "inverter1_4/VN" -215.819
+cap "inverter1_3/A" "inverter1_4/VP" 15.8306
+cap "inverter1_2/A" "inverter1_4/VN" 5.13496
+cap "inverter1_4/Y" "inverter1_4/VP" 9.84007
+cap "inverter1_3/A" "inverter1_2/A" 21.1807
+cap "inverter1_4/A" "inverter1_4/VN" -1.39063
+cap "inverter1_4/VP" "inverter1_4/VN" -57.1972
+cap "inverter1_4/Y" "inverter1_4/VN" 1.27983
+cap "inverter1_3/A" "inverter1_4/VN" 0.296837
+cap "inverter1_4/VP" "inverter1_4/A" -1.75783
+cap "inverter1_4/Y" "inverter1_4/A" 19.3696
+cap "inverter1_3/A" "inverter1_4/A" 4.76922
+cap "inverter1_4/VP" "inverter1_4/Y" -7.24687
+cap "inverter1_4/VP" "inverter1_3/A" 0.296837
+merge "inverter1_2/A" "inverter1_1/Y" -138.726 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2400 -300 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter1_1/Y" "li_710_270#"
+merge "inverter1_4/VN" "inverter1_3/VN" -1313.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -64000 -3600 -95800 -3820 0 0 0 0 0 0 0 0 0 0
+merge "inverter1_3/VN" "inverter1_2/VN"
+merge "inverter1_2/VN" "inverter1_1/VN"
+merge "inverter1_1/VN" "inverter1_0/VN"
+merge "inverter1_0/VN" "VSUBS"
+merge "VSUBS" "VN"
+merge "VN" "li_40_10#"
+merge "inverter1_3/A" "inverter1_2/Y" -138.726 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2400 -300 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter1_2/Y" "li_1070_270#"
+merge "inverter1_4/VP" "inverter1_3/VP" -2210.85 0 0 0 0 -323000 -5300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -64000 -3600 -96000 -3800 0 0 0 0 0 0 0 0 0 0
+merge "inverter1_3/VP" "inverter1_2/VP"
+merge "inverter1_2/VP" "inverter1_1/VP"
+merge "inverter1_1/VP" "inverter1_0/VP"
+merge "inverter1_0/VP" "VP"
+merge "VP" "li_40_560#"
+merge "li_40_560#" "w_0_330#"
+merge "inverter1_4/Y" "inverter1_0/A" -176.777 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4000 -400 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter1_0/A" "OUT"
+merge "inverter1_4/A" "inverter1_3/Y" -119.043 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2400 -300 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter1_3/Y" "li_1430_270#"
+merge "inverter1_1/A" "inverter1_0/Y" -127.987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2400 -300 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter1_0/Y" "li_350_270#"

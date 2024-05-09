@@ -1,0 +1,46 @@
+* NGSPICE file created from ringosc3_layout.ext - technology: sky130A
+
+.subckt inverter1 VP A VN Y
+X0 Y A VN VN sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X1 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+C0 Y A 0.03244f
+C1 VP Y 0.063905f
+C2 VP A 0.092764f
+C3 Y VN 0.179197f
+C4 A VN 0.307849f
+C5 VP VN 0.485657f
+.ends
+
+.subckt ringosc3_layout
+Xinverter1_0 VP OUT VN inverter1_1/A inverter1
+Xinverter1_1 VP inverter1_1/A VN inverter1_2/A inverter1
+Xinverter1_2 VP inverter1_2/A VN inverter1_3/A inverter1
+Xinverter1_3 VP inverter1_3/A VN inverter1_4/A inverter1
+Xinverter1_4 VP inverter1_4/A VN OUT inverter1
+C0 OUT inverter1_2/A 0.089434f
+C1 inverter1_1/A OUT 0.1053f
+C2 inverter1_3/A inverter1_2/A 0.025654f
+C3 inverter1_2/A VP 0.043191f
+C4 inverter1_1/A VP 0.042394f
+C5 VN inverter1_2/A 0.021874f
+C6 inverter1_1/A VN 0.021874f
+C7 inverter1_3/A OUT 0.08932f
+C8 OUT inverter1_4/A 0.100293f
+C9 OUT VP 0.398952f
+C10 VN OUT 0.360335f
+C11 inverter1_3/A inverter1_4/A 0.025654f
+C12 inverter1_3/A VP 0.043191f
+C13 inverter1_3/A VN 0.021874f
+C14 VP inverter1_4/A 0.037689f
+C15 inverter1_1/A inverter1_2/A 0.025654f
+C16 VN inverter1_4/A 0.021285f
+C17 VN VP -0.18877f
+C18 VN 0 -0.185934f
+C19 VP 0 2.19741f
+C20 inverter1_4/A 0 0.397168f
+C21 inverter1_3/A 0 0.378309f
+C22 inverter1_2/A 0 0.378309f
+C23 inverter1_1/A 0 0.391588f
+C24 OUT 0 0.574507f
+.ends
+

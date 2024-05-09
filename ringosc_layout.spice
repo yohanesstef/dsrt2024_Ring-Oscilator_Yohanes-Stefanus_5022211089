@@ -1,0 +1,20 @@
+* NGSPICE file created from ringosc_layout.ext - technology: sky130A
+
+.subckt inverter1 VP A VN Y
+X0 Y A VN VN sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X1 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+.ends
+
+.subckt ringosc_layout
+Xinverter1_0 VP OUT VN inverter1_1/Y inverter1
+Xinverter1_1 VP OUT VN inverter1_1/Y inverter1
+X0 a_1810_660# a_1450_660# VN VN sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X1 a_1810_660# a_1450_660# VP VP sky130_fd_pr__pfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X2 a_1450_660# a_1090_660# VN VN sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X3 OUT a_1810_660# VN VN sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X4 a_1090_660# inverter1_1/Y VN VN sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X5 a_1450_660# a_1090_660# VP VP sky130_fd_pr__pfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X6 OUT a_1810_660# VP VP sky130_fd_pr__pfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X7 a_1090_660# inverter1_1/Y VP VP sky130_fd_pr__pfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+.ends
+

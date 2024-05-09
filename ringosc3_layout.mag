@@ -1,0 +1,57 @@
+magic
+tech sky130A
+timestamp 1715176843
+<< nwell >>
+rect 0 165 900 260
+<< locali >>
+rect 20 280 900 300
+rect 865 155 905 160
+rect 175 135 255 155
+rect 355 135 435 155
+rect 535 135 615 155
+rect 715 135 795 155
+rect 865 135 875 155
+rect 895 135 905 155
+rect 865 130 905 135
+rect 20 5 900 25
+<< viali >>
+rect 45 125 65 145
+rect 875 135 895 155
+<< metal1 >>
+rect 20 275 900 305
+rect 35 155 905 160
+rect 35 145 875 155
+rect 35 125 45 145
+rect 65 135 875 145
+rect 895 135 905 155
+rect 65 130 905 135
+rect 65 125 75 130
+rect 35 120 75 125
+rect 20 25 740 30
+rect 750 25 900 30
+rect 20 0 900 25
+use inverter1  inverter1_0 ~/gits/dsrt_2024
+timestamp 1715175506
+transform 1 0 100 0 1 45
+box -100 -45 80 260
+use inverter1  inverter1_1
+timestamp 1715175506
+transform 1 0 280 0 1 45
+box -100 -45 80 260
+use inverter1  inverter1_2
+timestamp 1715175506
+transform 1 0 460 0 1 45
+box -100 -45 80 260
+use inverter1  inverter1_3
+timestamp 1715175506
+transform 1 0 640 0 1 45
+box -100 -45 80 260
+use inverter1  inverter1_4
+timestamp 1715175506
+transform 1 0 820 0 1 45
+box -100 -45 80 260
+<< labels >>
+rlabel metal1 905 145 905 145 3 OUT
+rlabel metal1 20 290 20 290 7 VP
+rlabel metal1 20 15 20 15 7 VN
+<< end >>
